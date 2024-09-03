@@ -60,3 +60,40 @@ console.log(location.host)
 console.log(location.hostname)
 console.log(location.port)
 
+let bom14 = ()=>{
+    location.reload()
+}
+
+//assign() - navigates to the page you specified (does not clear the history)
+let bom15 = ()=>{
+    location.assign("https://www.amazon.com/")
+}
+
+//replace() - replaces the current page with the page you provided(clears the history)
+let bom16 = ()=>{
+    location.replace("https://www.flipkart.com/")
+}
+
+//!NAVIGATOR
+console.log(navigator)
+
+console.log(navigator.appCodeName)
+console.log(navigator.appName)
+console.log(navigator.cookieEnabled)
+console.log(navigator.onLine)
+console.log(navigator.language)
+console.log(navigator.languages)
+
+navigator.geolocation.getCurrentPosition((loc)=>{
+    console.log(loc.coords.latitude)
+    console.log(loc.coords.longitude)
+})
+
+//!SCREEN
+console.log(screen)
+console.log(screen.height)
+console.log(screen.availHeight) //max height
+console.log(screen.width)
+console.log(screen.availWidth)  //max width
+console.log(screen.colorDepth)  //how many colors will be generated from available bits
+console.log(screen.pixelDepth)  //how many pixels will be generated
