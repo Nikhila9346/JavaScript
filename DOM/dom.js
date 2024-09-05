@@ -66,3 +66,65 @@ for(let ele of anchor){
     ele.style.color = "red"
     ele.style.textDecoration = "none"
 }
+
+//? 4. getElementsByName()
+
+let n = document.getElementsByName("form")
+for(let ele of n){
+    ele.style.backgroundColor = "red"
+}
+
+//? 5. querySelector()
+
+//*1. id
+
+// let j = document.querySelector("#heading1")
+// j.style.color = "yellow"
+
+//*2.class name
+
+// let c = document.querySelector(".image")
+// c.style.border = "5px solid purple"
+
+//*3. tag
+
+// let t = document.querySelector("a")
+// t.style.textDecorationLine = "overline"
+
+//*4. attribute selector
+
+// let a = document.querySelector("[type=text]")
+// a.style.backgroundColor = "green"
+
+//? 6.querySelectorAll()
+
+//*1. id
+
+let i = document.querySelectorAll("#heading1")
+console.log(i)
+for(let ele of i){
+    ele.style.backgroundColor = "red"
+    ele.style.color = "yellow"
+}
+//*2.class name
+
+let cl = document.querySelectorAll(".image")
+for(let ele of cl){
+    ele.style.border = "5px solid purple"
+
+}
+
+//*3. tag
+
+let ta = document.querySelectorAll("a")
+for(let ele of ta){
+    ele.style.textDecorationLine = "overline"
+}
+
+//*4. attribute selector
+
+let an = document.querySelectorAll("[type=text]")
+for(let ele of an){
+    ele.style.backgroundColor = "green"
+}
+
