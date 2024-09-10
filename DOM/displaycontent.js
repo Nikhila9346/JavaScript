@@ -27,12 +27,44 @@
 
 //*SETTING TEXT CONTENT
 
-let setContent = ()=>{
-    let sec = document.getElementById("container")
-    sec.innerText = "<h1>This is INNER text</h1>"    //displays tags
-    sec.innerHTML = "<h1>THis is inner<h1>NIKHILA</h1> HTML</h1>"
-    sec.textContent = "<h1>THis is text COntent</h1>" //displays tags
+// let setContent = ()=>{
+//     let sec = document.getElementById("container")
+//     sec.innerText = "<h1>This is INNER text</h1>"    //displays tags
+//     sec.innerHTML = "<h1>THis is inner<h1>NIKHILA</h1> HTML</h1>"
+//     sec.textContent = "<h1>THis is text COntent</h1>" //displays tags
+// }
+
+//!accessing the attributes
+
+
+
+//*removing Attributes
+
+let removeAttributes = ()=>{
+    let removed = document.querySelector("h1")
+    removed.removeAttribute("id")
 }
 
-//*accessing the attributes
+//*add Class List
 
+let addClass = ()=>{
+    let h1 = document.querySelector("h1")
+    // h1.classList.add("seven","three", "two")
+    // h1.classList.add("nine", "one")
+    // //*remove
+    // h1.classList.remove("three")
+    // console.dir(h1)
+    //*toggle
+    h1.classList.toggle("two")
+
+    //*contains
+   console.log( h1.classList.contains("one"))
+   console.log( h1.classList.contains("four"))
+
+   //*length
+   console.log(h1.classList.length)
+
+   //*item
+   console.log(h1.classList.item(1))
+   console.log(h1.classList.item(10))  //null
+}
